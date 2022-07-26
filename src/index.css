@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+}
+.search_form{
+    width: 100%;
+    margin: auto;
+    height: 10vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 5;
+    background-color: white;
+}
+.search_div{
+    margin: auto;
+    width: 80%;
+    /* background-color: red; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.search_div input{
+    font-family: 'Aclonica', sans-serif;
+    /* background-color: green; */
+    font-size: 25px;
+    height: 5vh;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.search_div .fa-search{
+    font-size: 25px;
+    position: relative;left:-40px;
+}
+.fevorite_link button{
+    font-size: 20px;
+    font-family: 'Aclonica', sans-serif;
+    /* background-color: green; */
+    border: 0px;
+    padding: 5px 20px;
+}
+.web_icon{
+    font-family: 'Aclonica', sans-serif;
+    border: 0px;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+.all_movies{
+    border-radius: 5px;
+    padding:50px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background:whitesmoke;
+    width: 80%;
+    position: relative;
+    top:10vh;
+    margin: 2% 10%;
+    min-height: 90vh;
+    /* margin: 10vh auto 2vh auto; */
+}
+.only_movie{
+    background-color: rgb(201, 194, 194);
+    margin: 10px 5px;
+    padding: 15px;
+    width: 174px;
+    min-height: 340px;
+    max-height: 360px;
+    border-radius: 5px;
+}
+.poster_img{
+    overflow: hidden;
+    height: 260px;
+    /* background-color: red; */
+}
+.movie_poster{
+    margin: auto;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top:0;
+}
+.movie_poster:hover{
+    width: 184px;
+    left:-5px;
+    top:-5px;
+ 
+}
+.details_btn{
+    /* background-color: red; */
+    text-align: center;
+}
+.details_btn button{
+    background-color: green;
+    padding: 5px 10px;
+    color: white;
+}
+@media screen and (max-width:1000px) {
+    .all_movies{
+        width: 92%;
+        margin: 2% 4%;
+        /* background-color: green; */
+    }
+    .search_form{
+        width: 100%;
+    }
+    .search_div{
+        width: 96%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .all_movies{
+        /* background-color: red; */
+        width: 96%;
+        margin: 2% 2%;
+    }
+    
+    .search_div input{
+        /* background-color: red; */
+        width: 100px;
+        position: fixed;
+        top:1.6vh;
+        left:42%;
+        min-width: 100px;
+    }
+    .search_div input:hover{
+        width: 200px;
+        left:32%;
+    }
+    .search_div .fa-search{
+        display: none;
+    }
+}
+
+
+/* movies set up */
+/* 
+.myloader_movies{
+    width: 80%;
+    height: 90vh;
+    position: fixed;
+    background-color: red;
+} */
+ 
+.all_details{
+    background-color: whitesmoke;
+    width: 80%;
+    margin:5vh auto 5vh;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.all_details:hover{
+    box-shadow: 2px 3px 5px black;
+}
+.head_main_title{
+    font-family: 'Aclonica', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.after_title{
+    display: flex;
+    justify-content: space-evenly;
+}
+.movie_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+.all_other{
+    font-size: 18px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.all_other label{
+    font-family: 'Aclonica', sans-serif;
+}
+.like_movies button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: red;
+    color :white;
+    font-family: 'Aclonica', sans-serif;
+    border: 1px solid red;   
+}
+.like_movies button:hover{
+    background-color: white;
+    color:red;
+}
+.go_to_home_page button{
+    margin-top: 20px;
+    padding: 5px 13px;
+    background-color: Green;
+    color :white;
+    font-family: 'Aclonica', sans-serif;
+    border: 1px solid green;
+}
+.go_to_home_page button:hover{
+    background-color: white;
+    color: green;
+}
+.active{
+    background-color: black;
+    color: white;
+}
+.footer{
+    margin-top: 10vh;
+    background-color: black;
+    height: 20vh;
+    color: white;
+}
+.footer_div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: 'Aclonica', sans-serif;
+
+}
+.more_movies{
+    background-color: black;
+    color: white;
+    font-family: 'Aclonica', sans-serif;
+    padding: 5px 10px;
+    position: relative;
+    left: 80%;
+}
+
+@media screen and (max-width:900px) {
+    .all_details{
+        /* background-color: red; */
+        height: auto;
+    }
+    .movie_body{
+        flex-direction: column;
+        /* background-color: green; */
+        height: auto;
+        padding: 20px;
+    }
+    .all_other{
+        width: 100%;
+    }
+    .movie_body img{
+        width: 100%;
+    }
+    .more_movies{
+        top:20px;
+        left: 75%;
+    }
+}
+@media screen and (max-width:500px) {
+    .all_details{
+        width: 96%;
+    }
+    .more_movies{
+        top:15px;
+        left: 70%;
+    }
+}
